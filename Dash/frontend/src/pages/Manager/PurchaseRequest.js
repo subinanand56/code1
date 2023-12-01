@@ -83,7 +83,7 @@ const PurchaseRequests = () => {
           </tr>
         </thead>
         <tbody>
-          {purchaseRequests.map((request) => (
+          {purchaseRequests.reverse().map((request) => (
             <tr key={request.id}>
               <td>{selectedBranch}</td>
               <td>{request.productName}</td>
@@ -132,16 +132,7 @@ const PurchaseRequests = () => {
           </div>
         )}
       </Modal>
-      {/* {selectedPurchaseImage && (
-        <div className="image-modal text-center mt-4">
-          <img src={selectedPurchaseImage} alt="Selected" className="selected-image"  style={{ maxWidth: "90%", height: "auto" }} />
-          <div className="button-container">
-            <Button variant="danger" onClick={() => setSelectedPurchaseImage(null)}>
-              Close
-            </Button>
-          </div>
-        </div>
-      )} */}
+      
     </div>
   );
 };

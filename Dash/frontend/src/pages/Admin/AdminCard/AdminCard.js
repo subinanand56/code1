@@ -111,8 +111,7 @@ const CompactCard = () => {
         </div>
         <div className="radialBar">
           <span>Rs{salesAmount}</span>
-          <span>Rs{expensesAmount}</span>
-          
+          <span>Rs{expensesAmount}</span>        
           <span>Rs{purchaseAmount}</span>
         </div>
         <div className="Row">
