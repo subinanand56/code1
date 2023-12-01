@@ -38,7 +38,7 @@ const Epurchase = () => {
           </tr>
         </thead>
         <tbody>
-        {purchaseRequests.map((request, index) => (
+        {purchaseRequests.reverse().map((request, index) => (
             <tr key={index}>
               <td>{request.branch}</td>
               <td>{request.productName}</td>
